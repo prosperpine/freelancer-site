@@ -58,9 +58,12 @@ width: 200px;
  flex-direction: column; 
  justify-content: center; 
  align-items: center; 
-  margin: 20px 40px;
+  margin: 20px 50px;
   border: 1px solid white; 
-  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px; 
+  
+  background-color: rgba(0, 0, 0, 0.7);
+   
   :hover {
     border: 2.4px solid white; 
   }
@@ -72,13 +75,16 @@ width: 300px;
 const NormalCardTitle =styled(motion.h1)`
 font-size: 18px;
   color:var(--fg);
+  
   padding: 10px;
   text-align: center;`
+ 
 
 
   const ServiceIcon = styled.div`
 font-size: 3rem; 
 padding-bottom: 20px; 
+font-color: #2d2d4e;
 `
 
   const ExpandedCard = styled(motion.div)`
@@ -100,6 +106,7 @@ padding-bottom: 20px;
 
   const ExpandedCardText = styled(motion.p)`
   padding: 5px;
+  width: 80%; 
   @media (max-width: 668px) {
     padding: 30px; 
   

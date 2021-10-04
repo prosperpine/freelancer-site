@@ -5,7 +5,7 @@ import poems from "./poems.png";
 import music from "./music.png"
 import movies from "./movies.png"
 import covid from "./covid.png"
-import todo from "./todo.png"
+import todowebapp from "./todowebapp.png"
 
 
 
@@ -20,7 +20,7 @@ export const Portfolio = () => {
 <FeaturedProjects >
 
 <Card>
-<a href="https://github.com/prosperpine/project-todos" target="_blank">
+<a href="https://fervent-shockley-4cb6df.netlify.app" target="_blank" rel="noopener noreferrer">
 
 <ProjectCard>
 
@@ -42,7 +42,7 @@ export const Portfolio = () => {
 
       
 <Card>
-  <a href="https://github.com/prosperpine/covid-app" target="_blank">
+  <a href="https://github.com/prosperpine/covid-app" target="_blank" rel="noopener noreferrer">
 <ProjectCard>
 
 <CovidProject>
@@ -104,12 +104,14 @@ width: 40%;
 
 
 const ProjectCard = styled.div`
+padding-top: 16px;
 display: flex; 
 flex-direction: column; 
 justify-content: center; 
 align-items: center; 
 margin: 40px 40px;
 border: 1px solid white; 
+border-radius: 5px;
 background-color: rgba(255, 255, 255, 0.8);
 :hover {
   border: 2.4px solid white; 
@@ -160,7 +162,7 @@ box-sizing: border-box;
 
 const ToDoProject = styled.div`
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(${todo});
+    url(${todowebapp});
   padding: 4rem;
   background-position: center;
   background-repeat: no-repeat;

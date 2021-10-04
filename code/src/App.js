@@ -10,121 +10,131 @@ import linkedin from './linkedin.svg';
 import profile from './profile.jpg';
 import { Services } from './Services';
 import { Portfolio } from './Portfolio';
-import { Card } from './Card'
+
+import LottieAnimation from './Lottie';
+import home from './dev.json';
+
 
 
 export const App = () => {
   return (
-    <Background>
-
-        <Navigation>
-          <MenuLink href="#home">
-            <p>Home</p>
-          </MenuLink>
-          <MenuLink href="#about">          
-            <p>About</p>
-          </MenuLink>        
-          <MenuLink href="#services">
-            <p>Services</p>
-          </MenuLink>
-          <MenuLink href="#portfolio"> 
-            <p>Portfolio</p>
-          </MenuLink>          
-          <MenuLink href="#contact">
-            <p>Contact</p>
-          </MenuLink>
-        </Navigation>
-        <HamburgerIcon />
-
-
-<FrontPage id="home">
-
-<Title>josephine lam</Title>
-
-<Subtitle>DEVELOPER - FREELANCER</Subtitle>   
-<IconContainer>
-<Icon href="https://www.linkedin.com/in/josephine-lam-180197198/" target="_blank">
-              <img  src={linkedin} alt="linkedin-logo"></img>
-            </Icon>
-<Icon href="https://github.com/prosperpine" target="_blank">
-              <img src={github} alt="github-logo"></img>
-
-              </Icon>
-</IconContainer>
-</FrontPage>
-
-<About id="about">
-<AboutCard><ProfilePic src={profile}></ProfilePic><AboutTitle> Hi, I’m Josephine
-</AboutTitle>
-<AboutText>
-I’m a freelancing front end developer based in Sweden. My mission is to get you the fresh and sleek-looking website that you or your business deserves! </AboutText><AboutText><br />
-I create websites and web applications with both <Span>design</Span> and <Span>accessability</Span> in mind to make sure your brand will be available and appealing to all of your customers.
-</AboutText><br /><AboutText>Do you already have design and hosting ready and just need someone to build the site for you?  Or are you a website newbie and don’t know anything about code, hosting or domains – either way, I can help!</AboutText></AboutCard>
-</About>
-
- <Services />
- <Portfolio />
-
-
-
-<Contact id="contact">
-<h1>How to contact me</h1>
-<a href="" 
->
-<ContactIcon><i class="far fa-envelope"></i>
-<ContactText>info@josephinelam.com</ContactText>
-
-</ContactIcon>
-</a>
-
-<a href="https://www.linkedin.com/in/josephine-lam-180197198/" target="_blank">
-<ContactIcon >
-<i class="fab fa-linkedin"></i>  
-<ContactText>connect through Linkedin</ContactText>        
-  </ContactIcon>
-  </a>
-
-
-{/* <ContactIcon>
-<i class="fas fa-phone-alt"></i>
-</ContactIcon> */}
-
-
-
-</Contact>
-
-<Footer> 
+    <main>
+    
+    <LottieAnimation lotti={home} />
+    <Footer> 
   <FooterText> 
     <p>Copyright © 2021 Josephine Lam. All rights reserved.</p>
   </FooterText>
 </Footer>
+</main>
 
-<CookieConsent
-  location="bottom"
-  buttonText="Got it!!"
-  cookieName="myAwesomeCookieName"
-  style={{ background: "rgba(46, 49, 49, 1)" }}
-  buttonStyle={{ color: "#4e503b", fontSize: "10px" }}
-  expires={150}
->
-  This website uses cookies to enhance the user experience.{" "}
-  {/* <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span> */}
-</CookieConsent>
+//     <Background>
+//         <Navigation>
+//           <MenuLink href="#home">
+//             <p>Home</p>
+//           </MenuLink>
+//           <MenuLink href="#about">          
+//             <p>About</p>
+//           </MenuLink>        
+//           <MenuLink href="#services">
+//             <p>Services</p>
+//           </MenuLink>
+//           <MenuLink href="#portfolio"> 
+//             <p>Portfolio</p>
+//           </MenuLink>          
+//           <MenuLink href="#contact">
+//             <p>Contact</p>
+//           </MenuLink>
+//         </Navigation>
+//         <HamburgerIcon />
 
 
-    </Background>
+// <FrontPage id="home">
+
+// <Title>josephine lam</Title>
+
+// <Subtitle>DEVELOPER - FREELANCER</Subtitle>   
+// <IconContainer>
+// <Icon href="https://www.linkedin.com/in/josephine-lam-180197198/" target="_blank">
+//               <img  src={linkedin} alt="linkedin-logo"></img>
+//             </Icon>
+// <Icon href="https://github.com/prosperpine" target="_blank">
+//               <img src={github} alt="github-logo"></img>
+
+//               </Icon>
+// </IconContainer>
+// </FrontPage>
+
+// <About id="about">
+// <AboutCard><ProfilePic src={profile}></ProfilePic><AboutTitle> Hi, I’m Josephine
+// </AboutTitle>
+// <AboutText>
+// I’m a freelancing front end developer based in Sweden. My mission is to get you the fresh and sleek-looking website that you or your business deserves! </AboutText><AboutText><br />
+// I create websites and web applications with both <Span>design</Span> and <Span>accessability</Span> in mind to make sure your brand will be available and appealing to all of your customers.
+// </AboutText><br /><AboutText>Do you already have design and hosting ready and just need someone to build the site for you?  Or are you a website newbie and don’t know anything about code, hosting or domains – either way, I can help!</AboutText></AboutCard>
+// </About>
+
+//  <Services />
+//  <Portfolio />
+
+
+
+// <Contact id="contact">
+// <h1>How to contact me</h1>
+// <a href="" 
+// >
+// <ContactIcon><i class="far fa-envelope"></i>
+// <ContactText>hey@josephinelam.com</ContactText>
+
+// </ContactIcon>
+// </a>
+
+// <a href="https://www.linkedin.com/in/josephine-lam-180197198/" target="_blank" rel="noopener noreferrer">
+// <ContactIcon >
+// <i class="fab fa-linkedin"></i>  
+// <ContactText>connect through Linkedin</ContactText>        
+//   </ContactIcon>
+//   </a>
+
+
+// {/* <ContactIcon>
+// <i class="fas fa-phone-alt"></i>
+// </ContactIcon> */}
+
+
+
+// </Contact>
+
+
+
+
+// <CookieConsent
+//   location="bottom"
+//   buttonText="Got it!!"
+//   cookieName="myAwesomeCookieName"
+//   style={{ background: "rgba(46, 49, 49, 1)" }}
+//   buttonStyle={{ color: "#4e503b", fontSize: "10px" }}
+//   expires={150}
+// >
+//   This website uses cookies to enhance the user experience.{" "}
+//   {/* <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span> */}
+// </CookieConsent>
+
+
+//     </Background>
   )
 }
 
 
 const Background = styled.main`
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(${hk});
+background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url(${hk});
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
 height: 100%; 
 width: 100%; 
+ 
 `
 
 const Navigation = styled.div`
@@ -154,12 +164,16 @@ align-items: center;
 height: 100vh; 
 font-family: 'Montserrat', sans-serif;
 
+
 ` 
 const Title = styled.h1`
 font-size: 4.4rem; 
+font-weight: 400; 
+ 
 @media (max-width: 668px) {
   text-align:center;
   font-size: 3.2rem; 
+  padding: 0 10px; 
 
 }
 `
